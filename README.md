@@ -27,7 +27,7 @@ contract HTLC {
     } 
 
     // if the hashing the key matches, then transfer ETH toAddress
-    function checkKey(string _key) payable condition ( sha256(_key) == hash ) returns (string) { 
+    function checkKey(bytes32 _key) payable condition ( sha256(_key) == hash ) returns (string) { 
         toAddress.transfer(fromValue); 
         key = _key; 
         return key; 
