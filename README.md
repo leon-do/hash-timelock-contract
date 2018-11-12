@@ -35,7 +35,7 @@ contract HTLC {
     } 
 
     /* if the contract times out, then return the funds */
-    function refund () payable condition ( startTime + lockTime < now ) returns (uint) { 
+    function refund () payable condition ( now > startTime + lockTime ) returns (uint) { 
         fromAddress.transfer(fromValue); 
         return fromValue; 
     } 
