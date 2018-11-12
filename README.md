@@ -23,7 +23,8 @@ contract HTLC {
     } 
 
     modifier condition(bool _condition) { 
-        require(_condition); _; 
+        require(_condition); 
+        _; 
     } 
 
     /* if the hashing the key matches, then transfer ETH toAddress */
