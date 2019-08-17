@@ -34,7 +34,7 @@ contract HTLC {
         _; 
     } 
 
-    /* if the hashing the key matches, then transfer ETH toAddress */
+    /* if hashing the key matches, then transfer ETH toAddress */
     function withdraw (bytes32 _key) payable condition ( sha256(_key) == hash ) returns (bytes32) { 
         toAddress.transfer(fromValue); 
         key = _key; 
