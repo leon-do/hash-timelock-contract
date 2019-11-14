@@ -35,11 +35,9 @@ contract HTLC {
     } 
 
     /* if hashing the key matches, then transfer ETH toAddress */
-    function withdraw (bytes32 _key) payable condition ( sha256(_key) == hash ) returns (bytes32) { 
-        // REENTRY ATTACK VULNERABLITY HERE
-        toAddress.transfer(fromValue); 
+    function withdraw (bytes32 _key) payable condition ( sha256(_key) == hash ) { 
         key = _key; 
-        return key; 
+        toAddress.transfer(fromValue); 
     } 
 
     /* if the contract times out, then return the funds */
