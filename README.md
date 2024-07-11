@@ -1,5 +1,9 @@
 # HTLC
 
+For EVM to Non-EVM cross chain swaps
+
+https://leondo.medium.com/stellar-hash-timelock-contract-htlc-9cdc998999c5
+
 ## Install
 
 ```shell
