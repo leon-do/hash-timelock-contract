@@ -2,7 +2,12 @@
 
 For EVM to Non-EVM cross chain swaps
 
-https://leondo.medium.com/stellar-hash-timelock-contract-htlc-9cdc998999c5
+
+[![](https://github.com/leon-do/hash-timelock-contract/assets/19412160/698f151d-e11e-452e-877f-24b760dcd4c7)]([https://codecademy.com](https://www.youtube.com/watch?v=12Y0qTUlRKU))
+
+LND: https://www.youtube.com/watch?v=12Y0qTUlRKU
+
+Stellar: https://leondo.medium.com/stellar-hash-timelock-contract-htlc-9cdc998999c5
 
 ## Install
 
